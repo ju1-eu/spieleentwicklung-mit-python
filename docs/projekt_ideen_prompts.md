@@ -105,10 +105,38 @@ bearbeitet am 29. September 2024
 
 ### Projekt erstellen
 
+- **Projektorientierte Entwicklung** mit Python (MINT)
+  1. Projektstruktur
+     - [ ] Kanban-Board erstellen
+     - [ ] Ordnerstruktur anlegen
+     - [ ] Git-Repository initialisieren
+     - [ ] GitHub-Projekt einrichten
+     - [ ] Programm/Spielidee entwickeln
+     - [ ] Struktogramm erstellen
+     - [ ] MindMap erstellen
+     - [ ] README.md mit MIT-Lizenz verfassen
+
+  2. Entwicklungsprozess
+     - [ ] Entwicklungsumgebung einrichten
+     - [ ] Programmlogik implementieren
+     - [ ] Code dokumentieren (Docstrings, Kommentare)
+     - [ ] Versionskontrolle nutzen (regelmäßige Commits)
+     - [ ] Code-Review durchführen
+
+  3. Konzepte (je nach Projektstufe)
+
+  4. Projektideen umsetzen: Anfänger, Fortgeschritten, Profi
+     - [ ] Modularer Aufbau der Projekte (in kleinere, aufeinander aufbauende Module, schrittweises Lernen)
+  5. Zusätzliche Aufgaben
+     - [ ] Interdisziplinäre Aspekte einbeziehen (z.B. Physik)
+     - [ ] Benutzerhandbuch schreiben
+     - [ ] Tests durchführen und Feedback einarbeiten
+     - [ ] Präsentation des Projekts vorbereiten
+
 - [ ] Erstelle eine geordnete **Projektstruktur mit Ressourcen-Ordnern**
   - [ ] Erstelle ein Bashscript für die Umsetzung
 
-- Aufgabe: Spielidee entwickeln
+- **Aufgabe: Programm/Spielidee entwickeln**
   - Ziel: Projektorientierte Spieleentwicklung mit Python (MINT) 
   - Projektideen umsetzen: Anfänger (z.B. Taschenrechner)
   - Konzepte und Lernziele: 
@@ -120,6 +148,13 @@ bearbeitet am 29. September 2024
   - textbasierte **MindMap**: Struktur und Zusammenhänge visualisieren.
 
 - Erstelle zu jeder Spielidee eine kurze **Beschreibung** und welche **Konzepte** verwendet werden
+
+- **Git-Versionskontrolle**: Commit erstellen (Best Practices)
+  - Commit mit mehrzeiliger Nachricht erstellen
+  - Visualisierung des Commit-Prozesses
+  - Regelmäßige Commits (Fortschritt dokumentieren)
+  - Commit-Nachrichten konsistent halten (einheitliche Formate)
+  - Branching nutzen (für neue Features oder Bugfixe)
 
 - **SMART-Ziele für die Projekte** 
   - Projektideen umsetzen

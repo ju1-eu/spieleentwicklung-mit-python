@@ -9,29 +9,25 @@ date: "2024-09-28"
 bearbeitet am 28. September 2024
 
 - [Git](#git)
-  - [**1. Git-Konfigurationsbefehle verstehen**](#1-git-konfigurationsbefehle-verstehen)
-  - [**2. Umsetzung der Git-Konfiguration**](#2-umsetzung-der-git-konfiguration)
-    - [**d. Überprüfe die Git-Konfiguration**](#d-überprüfe-die-git-konfiguration)
-  - [**3. SSH-Schlüssel für GitHub einrichten (Empfohlen)**](#3-ssh-schlüssel-für-github-einrichten-empfohlen)
-    - [**a. Überprüfe, ob bereits ein SSH-Schlüssel existiert**](#a-überprüfe-ob-bereits-ein-ssh-schlüssel-existiert)
-    - [**b. Generiere einen neuen SSH-Schlüssel**](#b-generiere-einen-neuen-ssh-schlüssel)
-    - [**c. Füge den SSH-Schlüssel zum SSH-Agent hinzu**](#c-füge-den-ssh-schlüssel-zum-ssh-agent-hinzu)
-    - [**d. Füge den öffentlichen SSH-Schlüssel zu GitHub hinzu**](#d-füge-den-öffentlichen-ssh-schlüssel-zu-github-hinzu)
-  - [**4. GitHub-Repository erstellen und verbinden**](#4-github-repository-erstellen-und-verbinden)
-    - [**a. GitHub-Repository erstellen**](#a-github-repository-erstellen)
-    - [**b. Lokales Git-Repository initialisieren und verbinden**](#b-lokales-git-repository-initialisieren-und-verbinden)
-  - [**5. Jupyter Notebook als Python-Skript exportieren**](#5-jupyter-notebook-als-python-skript-exportieren)
-    - [**Automatisches Exportieren bei jedem Commit (Optional)**](#automatisches-exportieren-bei-jedem-commit-optional)
-  - [**6. Weitere nützliche Git-Befehle und Best Practices**](#6-weitere-nützliche-git-befehle-und-best-practices)
-    - [**a. Git-Aliase nutzen**](#a-git-aliase-nutzen)
-    - [**b. Branching und Pull Requests**](#b-branching-und-pull-requests)
-    - [**c. Globale `.gitignore` erweitern**](#c-globale-gitignore-erweitern)
-    - [**d. Farben und Lesbarkeit optimieren**](#d-farben-und-lesbarkeit-optimieren)
-    - [**e. Commit-Nachrichten formatieren**](#e-commit-nachrichten-formatieren)
+  - [Git-Konfigurationsbefehle verstehen](#git-konfigurationsbefehle-verstehen)
+  - [Umsetzung der Git-Konfiguration](#umsetzung-der-git-konfiguration)
+  - [SSH-Schlüssel für GitHub einrichten](#ssh-schlüssel-für-github-einrichten)
+    - [Überprüfe, ob bereits ein SSH-Schlüssel existiert](#überprüfe-ob-bereits-ein-ssh-schlüssel-existiert)
+    - [Generiere einen neuen SSH-Schlüssel](#generiere-einen-neuen-ssh-schlüssel)
+    - [Füge den SSH-Schlüssel zum SSH-Agent hinzu](#füge-den-ssh-schlüssel-zum-ssh-agent-hinzu)
+    - [Füge den öffentlichen SSH-Schlüssel zu GitHub hinzu](#füge-den-öffentlichen-ssh-schlüssel-zu-github-hinzu)
+  - [GitHub-Repository erstellen und verbinden](#github-repository-erstellen-und-verbinden)
+    - [GitHub-Repository erstellen](#github-repository-erstellen)
+    - [Lokales Git-Repository initialisieren und verbinden](#lokales-git-repository-initialisieren-und-verbinden)
+    - [Ausschließen von .html-Dateien mit Ausnahme von template.html in Git](#ausschließen-von-html-dateien-mit-ausnahme-von-templatehtml-in-git)
+  - [Jupyter Notebook als Python-Skript exportieren](#jupyter-notebook-als-python-skript-exportieren)
+    - [Automatisches Exportieren bei jedem Commit](#automatisches-exportieren-bei-jedem-commit)
+  - [Weitere nützliche Git-Befehle und Best Practices](#weitere-nützliche-git-befehle-und-best-practices)
+    - [Git-Aliase nutzen](#git-aliase-nutzen)
+    - [Branching und Pull Requests](#branching-und-pull-requests)
+    - [Globale .gitignore erweitern](#globale-gitignore-erweitern)
 
-## **1. Git-Konfigurationsbefehle verstehen**
-
-Eine kurze Übersicht der wichtigsten Einstellungen:
+## Git-Konfigurationsbefehle verstehen
 
 - **Benutzeridentifikation**: Setzt deinen Namen und deine E-Mail-Adresse, die bei jedem Commit verwendet werden.
 - **Standard-Branch**: Setzt den Standard-Branch-Namen auf `main` statt `master`.
@@ -43,7 +39,7 @@ Eine kurze Übersicht der wichtigsten Einstellungen:
 - **Automatisches Entfernen von gemergten Branches**: Entfernt lokale Branches, die bereits gemergt wurden.
 - **Whitespace-Änderungen anzeigen**: Hebt Änderungen in Leerzeichen hervor.
 
-## **2. Umsetzung der Git-Konfiguration**
+## Umsetzung der Git-Konfiguration
 
 1. **Erstelle eine neue Datei namens `git_setup.sh`:**
 
@@ -98,19 +94,15 @@ Eine kurze Übersicht der wichtigsten Einstellungen:
      ```bash
      chmod +x git_setup.sh
      ./git_setup.sh
+     # Überprüfe die Git-Konfiguration
+     git config --list
      ```
 
-### **d. Überprüfe die Git-Konfiguration**
-
-```bash
-git config --list
-```
-
-## **3. SSH-Schlüssel für GitHub einrichten (Empfohlen)**
+## SSH-Schlüssel für GitHub einrichten
 
 Um die Sicherheit und Benutzerfreundlichkeit zu erhöhen, ist es empfehlenswert, SSH-Schlüssel für die Authentifizierung mit GitHub zu verwenden.
 
-### **a. Überprüfe, ob bereits ein SSH-Schlüssel existiert**
+### Überprüfe, ob bereits ein SSH-Schlüssel existiert
 
 ```bash
 ls -al ~/.ssh
@@ -118,7 +110,7 @@ ls -al ~/.ssh
 
 Suche nach Dateien wie `id_rsa.pub` oder `id_ed25519.pub`. Wenn keine SSH-Schlüssel vorhanden sind, erstelle einen neuen.
 
-### **b. Generiere einen neuen SSH-Schlüssel**
+### Generiere einen neuen SSH-Schlüssel
 
 1. **Erstelle einen neuen SSH-Schlüssel mit deiner GitHub-E-Mail-Adresse:**
 
@@ -136,7 +128,7 @@ Suche nach Dateien wie `id_rsa.pub` oder `id_ed25519.pub`. Wenn keine SSH-Schlü
    - Drücke `Enter`, um den Schlüssel im Standardverzeichnis zu speichern (`~/.ssh/id_ed25519`).
    - Optional: Lege ein sicheres Passwort fest oder drücke einfach `Enter`, um kein Passwort zu verwenden.
 
-### **c. Füge den SSH-Schlüssel zum SSH-Agent hinzu**
+### Füge den SSH-Schlüssel zum SSH-Agent hinzu
 
 1. **Starte den SSH-Agenten im Hintergrund:**
 
@@ -152,7 +144,7 @@ Suche nach Dateien wie `id_rsa.pub` oder `id_ed25519.pub`. Wenn keine SSH-Schlü
 
    **Hinweis:** Passe den Pfad an, falls du RSA verwendet hast (`~/.ssh/id_rsa`).
 
-### **d. Füge den öffentlichen SSH-Schlüssel zu GitHub hinzu**
+### Füge den öffentlichen SSH-Schlüssel zu GitHub hinzu
 
 1. **Kopiere den Inhalt deines öffentlichen SSH-Schlüssels in die Zwischenablage:**
 
@@ -181,11 +173,11 @@ Suche nach Dateien wie `id_rsa.pub` oder `id_ed25519.pub`. Wenn keine SSH-Schlü
    Hi JanUnger! You've successfully authenticated, but GitHub does not provide shell access.
    ```
 
-## **4. GitHub-Repository erstellen und verbinden**
+## GitHub-Repository erstellen und verbinden
 
 Falls du dies noch nicht getan hast, erstelle ein Repository auf GitHub und verbinde es mit deinem lokalen Projekt.
 
-### **a. GitHub-Repository erstellen**
+### GitHub-Repository erstellen
 
 1. **Gehe zu [GitHub](https://github.com/) und melde dich an.**
 2. **Klicke auf das Plus-Symbol (`+`) oben rechts und wähle "New repository".**
@@ -196,21 +188,51 @@ Falls du dies noch nicht getan hast, erstelle ein Repository auf GitHub und verb
    - **README hinzufügen:** Aktiviere **"Initialize this repository with a README"**.
 4. **Klicke auf "Create repository".**
 
-### **b. Lokales Git-Repository initialisieren und verbinden**
+### Lokales Git-Repository initialisieren und verbinden
 
-1. **Navigiere zu deinem Projektordner im Terminal:**
+```bash
+echo "# Spieleentwicklung mit Python" >> README.md
+git init
+git add README.md
+git commit -m "Initialer Commit"
 
-   ```bash
-   echo "# mechanik" >> README.md
-   git init
-   git add README.md
-   git commit -m "first commit"
-   git branch -M main
-   git remote add origin git@github.com:ju1-eu/mechanik.git
-   git push -u origin main
-   ```
+# GitHub-Repository verbinden und pushen
+git branch -M main
+git remote add origin git@github.com:ju1-eu/spieleentwicklung-mit-python.git
+git push -u origin main
 
-## **5. Jupyter Notebook als Python-Skript exportieren**
+# Tagging der Version 1.0
+git tag -a v1.0 -m "Version 1.0: Initiale Veröffentlichung"
+git push origin v1.0
+```
+
+### Ausschließen von .html-Dateien mit Ausnahme von template.html in Git
+
+```bash
+# 1. .gitignore aktualisieren
+echo "*.html" >> .gitignore
+echo "!template.html" >> .gitignore
+
+# 2. Entfernen Sie die .html-Dateien aus dem Git-Tracking außer template.html
+git rm --cached *.html
+git reset template.html
+
+# 3. Commit der Änderungen
+git add .gitignore
+git commit -m "Alle .html-Dateien ignorieren außer template.html"
+
+# 4. Füge template.html hinzu
+git add template.html
+git commit -m "Füge template.html hinzu und verfolge sie trotz .gitignore"
+
+# 5. Push der Änderungen zum Remote-Repository
+git push origin main
+
+# 6. Überprüfen Sie den Status
+git status
+```
+
+## Jupyter Notebook als Python-Skript exportieren
 
 Um dein Jupyter Notebook (`mein_notebook.ipynb`) als Python-Skript zu exportieren, verwende den folgenden Befehl:
 
@@ -220,7 +242,7 @@ jupyter nbconvert --to script mein_notebook.ipynb
 
 Dies erstellt eine Datei namens `mein_notebook.py` im selben Verzeichnis.
 
-### **Automatisches Exportieren bei jedem Commit (Optional)**
+### Automatisches Exportieren bei jedem Commit
 
 Um sicherzustellen, dass dein Python-Skript immer auf dem neuesten Stand ist, kannst du einen Git Hook einrichten, der das Notebook automatisch bei jedem Commit exportiert.
 
@@ -257,11 +279,9 @@ Um sicherzustellen, dass dein Python-Skript immer auf dem neuesten Stand ist, ka
 
 Jetzt wird bei jedem Commit dein Notebook automatisch als Python-Skript exportiert und hinzugefügt.
 
-## **6. Weitere nützliche Git-Befehle und Best Practices**
+## Weitere nützliche Git-Befehle und Best Practices
 
-### **a. Git-Aliase nutzen**
-
-Dank der zuvor eingerichteten Aliase kannst du häufig verwendete Git-Befehle kürzer schreiben:
+### Git-Aliase nutzen
 
 - **Status anzeigen:**
 
@@ -293,7 +313,7 @@ Dank der zuvor eingerichteten Aliase kannst du häufig verwendete Git-Befehle k�
   git lg
   ```
 
-### **b. Branching und Pull Requests**
+### Branching und Pull Requests
 
 Für eine saubere Entwicklung ist es empfehlenswert, neue Features in separaten Branches zu entwickeln und diese über Pull Requests zu mergen.
 
@@ -321,17 +341,12 @@ Für eine saubere Entwicklung ist es empfehlenswert, neue Features in separaten 
    - Du siehst eine Meldung, dass ein neuer Branch gepusht wurde. Klicke auf **"Compare & pull request"**.
    - Füge eine Beschreibung hinzu und klicke auf **"Create pull request"**.
 
-### **c. Globale `.gitignore` erweitern**
+### Globale .gitignore erweitern
 
 Falls du zusätzliche Dateien oder Verzeichnisse global ignorieren möchtest, bearbeite die globale `.gitignore`-Datei:
 
 ```bash
 vim ~/.gitignore_global
-```
-
-Füge weitere Einträge hinzu:
-
-```
 # macOS
 .DS_Store
 *~
@@ -363,23 +378,12 @@ venv/
 *.out
 *.toc
 
+# HTML
+*.html
+# Ausnahme: Verfolge die Datei template.html
+!template.html
+
 # Editor spezifisch
 .vscode/
 .idea/
-```
-
-### **d. Farben und Lesbarkeit optimieren**
-
-Mit aktiviertem Farbmodus sind Git-Ausgaben besser lesbar:
-
-```bash
-git config --global color.ui auto
-```
-
-### **e. Commit-Nachrichten formatieren**
-
-Verwende klare und präzise Commit-Nachrichten, die den Zweck der Änderungen beschreiben. Zum Beispiel:
-
-```bash
-git commit -m "Füge Rollreibungssimulation mit Tkinter hinzu"
 ```
