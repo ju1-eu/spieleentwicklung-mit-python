@@ -37,8 +37,7 @@ Spieleentwicklung mit Python (MINT)</a>
 <ul>
 <li><a href="#übersicht">Übersicht</a></li>
 <li><a href="#struktur">Struktur</a></li>
-<li><a href="#nutzung---git-und-conda-umgebung">Nutzung - Git und
-Conda-Umgebung</a>
+<li><a href="#nutzung---git-und-conda">Nutzung - Git und Conda</a>
 <ul>
 <li><a
 href="#conda-umgebung-erstellen-aktualisieren-und-aktivieren">Conda-Umgebung
@@ -89,8 +88,7 @@ Aufgaben.</li>
 <li><strong>LICENSE</strong>: Lizenzinformationen (MIT-Lizenz).</li>
 <li><strong>requirements.txt</strong>: Python-Abhängigkeiten.</li>
 </ul>
-<h2 id="nutzung---git-und-conda-umgebung">Nutzung - Git und
-Conda-Umgebung</h2>
+<h2 id="nutzung---git-und-conda">Nutzung - Git und Conda</h2>
 <ol type="1">
 <li><p><strong>Einrichten der Entwicklungsumgebung</strong></p>
 <pre><code>cd Spieleentwicklung_Python
@@ -205,20 +203,19 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge jupyter_contrib_nbextensions</span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> contrib nbextension install <span class="at">--user</span></span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Konvertieren von Jupyter Notebooks</span></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> python code/mein_notebook.ipynb</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> markdown code/mein_notebook.ipynb</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> html code/mein_notebook.ipynb</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> pdf code/mein_notebook.ipynb</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co">#jupyter nbconvert --to pdf --template-file ./custom_template.tplx code/mein_notebook.ipynb</span></span></code></pre></div>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Konvertieren von Jupyter Notebooks in *.py</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> python src/test_installation.ipynb </span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> markdown src/test_installation.ipynb </span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> html src/test_installation.ipynb </span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> pdf src/test_installation.ipynb </span></code></pre></div>
 <p>Jupyter Notebook als Python-Skript exportieren mittels Git Hook</p>
 <div class="sourceCode" id="cb6"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Git Hook</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> .git/hooks</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> pre-commit</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   <span class="co">#!/bin/sh</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>   <span class="ex">jupyter</span> nbconvert <span class="at">--to</span> script ../../code/mein_notebook.ipynb</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">git</span> add ../../code/mein_notebook.py</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>   <span class="ex">jupyter</span> nbconvert <span class="at">--to</span> script ../../src/test_installation.ipynb </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">git</span> add ../../src/test_installation.ipynb </span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x pre-commit</span></code></pre></div>
 <h3 id="aktivieren-der-umgebung">Aktivieren der Umgebung</h3>

@@ -5,7 +5,7 @@ bearbeitet am 29. September 2024
 - [Projektorientierte Spieleentwicklung mit Python (MINT)](#projektorientierte-spieleentwicklung-mit-python-mint)
   - [Übersicht](#übersicht)
   - [Struktur](#struktur)
-  - [Nutzung - Git und Conda-Umgebung](#nutzung---git-und-conda-umgebung)
+  - [Nutzung - Git und Conda](#nutzung---git-und-conda)
     - [Conda-Umgebung erstellen, aktualisieren und aktivieren](#conda-umgebung-erstellen-aktualisieren-und-aktivieren)
   - [Lizenz](#lizenz)
   - [Installation](#installation)
@@ -34,7 +34,7 @@ Dieses Projekt zielt darauf ab, das Erlernen und Anwenden von Python-Programmier
 - **LICENSE**: Lizenzinformationen (MIT-Lizenz).
 - **requirements.txt**: Python-Abhängigkeiten.
 
-## Nutzung - Git und Conda-Umgebung
+## Nutzung - Git und Conda
 
 1. **Einrichten der Entwicklungsumgebung**
    ```
@@ -159,12 +159,11 @@ conda env update -f environment.yml
 conda install -c conda-forge jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 
-# Konvertieren von Jupyter Notebooks
-jupyter nbconvert --to python code/mein_notebook.ipynb
-jupyter nbconvert --to markdown code/mein_notebook.ipynb
-jupyter nbconvert --to html code/mein_notebook.ipynb
-jupyter nbconvert --to pdf code/mein_notebook.ipynb
-#jupyter nbconvert --to pdf --template-file ./custom_template.tplx code/mein_notebook.ipynb
+# Konvertieren von Jupyter Notebooks in *.py
+jupyter nbconvert --to python src/test_installation.ipynb 
+jupyter nbconvert --to markdown src/test_installation.ipynb 
+jupyter nbconvert --to html src/test_installation.ipynb 
+jupyter nbconvert --to pdf src/test_installation.ipynb 
 ```
 
 Jupyter Notebook als Python-Skript exportieren mittels Git Hook
@@ -174,8 +173,8 @@ Jupyter Notebook als Python-Skript exportieren mittels Git Hook
 cd .git/hooks
 vim pre-commit
    #!/bin/sh
-   jupyter nbconvert --to script ../../code/mein_notebook.ipynb
-   git add ../../code/mein_notebook.py
+   jupyter nbconvert --to script ../../src/test_installation.ipynb 
+   git add ../../src/test_installation.ipynb 
 
 chmod +x pre-commit
 ```

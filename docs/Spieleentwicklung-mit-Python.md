@@ -29,17 +29,17 @@ bearbeitet am 29. September 2024
 ## Spieleentwicklung mit Python
 
 1. Projektstruktur
-   - [ ] Kanban-Board erstellen
-   - [ ] Ordnerstruktur anlegen
-   - [ ] Git-Repository initialisieren
-   - [ ] GitHub-Projekt einrichten
-   - [ ] Spielidee entwickeln
-   - [ ] Struktogramm zeichnen
-   - [ ] MindMap erstellen
-   - [ ] README.md mit MIT-Lizenz verfassen
+   - [x] Kanban-Board erstellen
+   - [x] Ordnerstruktur anlegen
+   - [x] Git-Repository initialisieren
+   - [x] GitHub-Projekt einrichten
+   - [x] Spielidee entwickeln
+   - [x] Struktogramm zeichnen
+   - [x] MindMap erstellen
+   - [x] README.md mit MIT-Lizenz verfassen
 
 2. Entwicklungsprozess
-   - [ ] Python-Entwicklungsumgebung einrichten
+   - [x] Python-Entwicklungsumgebung einrichten
    - [ ] Spiellogik implementieren
    - [ ] Code dokumentieren (Docstrings, Kommentare)
    - [ ] Versionskontrolle nutzen (regelmäßige Commits)
@@ -101,17 +101,19 @@ Erlernen und Anwenden von Python-Programmierung durch die Entwicklung von Spiele
 
 #### Anfänger (Einfach)
 
+Kanban-Board zur Aufgabenorganisation
+
 1. Quiz-Spiel
-   - Beschreibung: Multiple-Choice-Fragen zu MINT-Themen
-   - Konzepte: Listen, Dictionaries, Funktionen
+   - Beschreibung: 
+   - Konzepte: 
 
 2. Tic-Tac-Toe
-   - Beschreibung: Klassisches 3x3-Gitter-Spiel für zwei Spieler
-   - Konzepte: 2D-Listen, Funktionen, Bedingungen
+   - Beschreibung: 
+   - Konzepte: 
 
-3. Einfacher Taschenrechner
-   - Beschreibung: GUI-basierter Rechner für Grundrechenarten
-   - Konzepte: GUI-Programmierung (z.B. mit Tkinter), Funktionen
+3. Taschenrechner
+   - Beschreibung: 
+   - Konzepte: 
 
 #### Fortgeschritten
 

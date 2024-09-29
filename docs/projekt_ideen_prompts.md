@@ -11,32 +11,35 @@ bearbeitet am 29. September 2024
 - [Projektideen und KI-Prompts](#projektideen-und-ki-prompts)
   - [Textbearbeitung und Analyse](#textbearbeitung-und-analyse)
     - [Code-Bearbeitung](#code-bearbeitung)
-    - [Dokumentenanalyse](#dokumentenanalyse)
-    - [Mathematische Aufgaben](#mathematische-aufgaben)
+    - [Dokument zusammenfassen](#dokument-zusammenfassen)
+    - [Mathe](#mathe)
     - [Visualisierung](#visualisierung)
-    - [Konzeptuelle Darstellung](#konzeptuelle-darstellung)
+    - [Konzepte erklären](#konzepte-erklären)
     - [Feedback und Verbesserung](#feedback-und-verbesserung)
+    - [Code prüfen](#code-prüfen)
+    - [Projekt erstellen](#projekt-erstellen)
+    - [Prompt - Anweisungsformulierung](#prompt---anweisungsformulierung)
     - [Textbearbeitung](#textbearbeitung)
-    - [Simulation](#simulation)
+    - [Simulation mit Python](#simulation-mit-python)
   - [Lernstrategien](#lernstrategien)
-    - [1. Verstehen und Erklären](#1-verstehen-und-erklären)
-    - [2. Strukturiertes Lesen und Verarbeiten](#2-strukturiertes-lesen-und-verarbeiten)
-    - [3. Zeiteinteilung und Fokus](#3-zeiteinteilung-und-fokus)
-    - [4. Visualisierung und Vernetzung](#4-visualisierung-und-vernetzung)
-    - [5. Langfristiges Behalten](#5-langfristiges-behalten)
-    - [6. Zielorientierung](#6-zielorientierung)
-    - [7. Mentale Einstellung](#7-mentale-einstellung)
-    - [8. Aufgabenmanagement](#8-aufgabenmanagement)
-    - [9. Projektorientiertes Lernen](#9-projektorientiertes-lernen)
-  - [Kommunikationsanweisung für MINT-Bereiche (Bachelor-Niveau)](#kommunikationsanweisung-für-mint-bereiche-bachelor-niveau)
+    - [Verstehen und Erklären](#verstehen-und-erklären)
+    - [Strukturiertes Lesen und Verarbeiten](#strukturiertes-lesen-und-verarbeiten)
+    - [Zeiteinteilung und Fokus](#zeiteinteilung-und-fokus)
+    - [Visualisierung und Vernetzung](#visualisierung-und-vernetzung)
+    - [Langfristiges Behalten](#langfristiges-behalten)
+    - [Zielorientierung](#zielorientierung)
+    - [Mentale Einstellung](#mentale-einstellung)
+    - [Aufgabenmanagement](#aufgabenmanagement)
+    - [Projektorientiertes Lernen](#projektorientiertes-lernen)
+  - [Kommunikationsanweisung](#kommunikationsanweisung)
   - [Anleitung zur Textbearbeitung und -analyse mittels SQ3R-Methode](#anleitung-zur-textbearbeitung-und--analyse-mittels-sq3r-methode)
     - [Ziel](#ziel)
     - [Vorgehen](#vorgehen)
-      - [1. Survey (Überblick)](#1-survey-überblick)
-      - [2. Question (Fragen stellen)](#2-question-fragen-stellen)
-      - [3. Read (Lesen)](#3-read-lesen)
-      - [4. Recite (Wiedergeben)](#4-recite-wiedergeben)
-      - [5. Review (Überprüfen)](#5-review-überprüfen)
+      - [Survey (Überblick)](#survey-überblick)
+      - [Question (Fragen stellen)](#question-fragen-stellen)
+      - [Read (Lesen)](#read-lesen)
+      - [Recite (Wiedergeben)](#recite-wiedergeben)
+      - [Review (Überprüfen)](#review-überprüfen)
 
 ## Textbearbeitung und Analyse
 
@@ -51,19 +54,19 @@ bearbeitet am 29. September 2024
 
 - [ ] Ausführungshinweise und benötigte Bibliotheken angeben
 
-### Dokumentenanalyse
+### Dokument zusammenfassen
 
 - [ ] Dokument zusammenfassen, Ausgabe: in Markdown mit LaTeX-Mathe
-  - [ ] Hauptinhalt erfassen
-  - [ ] Kernpunkte hervorheben
+  - [ ] Roten Faden erfassen
+  - [ ] Kernkonzepte identifizieren und erläutern (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
   - [ ] Zusammenfassung strukturieren
 
 - [ ] Themenreflexion, Ausgabe: in Markdown mit LaTeX-Mathe
-  - [ ] 3-5 Hauptkonzepte identifizieren und erläutern (Laien, ohne die fachliche Tiefe zu vernachlässigen)
+  - [ ] 3-5 Hauptkonzepte identifizieren und erläutern (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
   - [ ] Zusammenhänge zwischen Konzepten reflektieren
   - [ ] Anwendungen und Auswirkungen diskutieren
 
-### Mathematische Aufgaben
+### Mathe
 
 - [ ] 3-5 Rechenbeispiele erstellen, Ausgabe: in Markdown mit LaTeX-Mathe
   - [ ] Lösungen mit Rechenweg angeben
@@ -77,12 +80,12 @@ bearbeitet am 29. September 2024
 - [ ] Tabelle erstellen, Ausgabe: in Markdown.
 - [ ] Diagramm mit Python erstellen, Code in deutsch kommentieren
 
-### Konzeptuelle Darstellung
+### Konzepte erklären
 
-- [ ] Textbasierte MindMap erstellen
+- [ ] Textbasierte MindMap erstellen mit den wichtigsten Konzepten
 
 - [ ] Strukturierte Liste der Konzepte erstellen, Ausgabe: in Markdown.
-  - [ ] Kurze Erklärung für jedes Konzept (Laien, ohne die fachliche Tiefe zu vernachlässigen)
+  - [ ] Kurze Erklärung für jedes Konzept (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
   - [ ] Konkretes Beispiel hinzufügen
   - [ ] Passende Analogie finden
 
@@ -91,34 +94,76 @@ bearbeitet am 29. September 2024
 - [ ] **Konstruktives Feedback** geben
   - [ ] Stärken und Schwächen erläutern
   - [ ] Verbesserungsmöglichkeiten vorschlagen
-  - [ ] Helfe mir die Schwächen und Verbesserungsvorschläge umzusetzen
+    - [ ] Helfe mir die Schwächen und Verbesserungsvorschläge umzusetzen
 
-- [ ] **Reflektiere und gebe Konstruktives Feedback**
-  - [ ] Stärken und Schwächen erläutern
-  - [ ] Verbesserungsmöglichkeiten vorschlagen
-  - [ ] **Ziel**:
-
-- [ ] **Modularer Aufbau der Projekte**:
-  - [ ] Unterteilen der komplexen Projekte in kleinere, aufeinander aufbauende Module. Dies erleichtert den Einstieg und ermöglicht ein schrittweises Lernen.
+### Code prüfen
 
 - [ ] **Code überprüfen** und verbessern
   - [ ] Codequalität, Funktionalität, Lesbarkeit und Performance bewerten
   - [ ] Verbesserungen priorisieren und erklären
-  - [ ] Helfe mir die Schwächen und Verbesserungsvorschläge umzusetzen
+    - [ ] Helfe mir die Schwächen und Verbesserungsvorschläge umzusetzen
+
+### Projekt erstellen
 
 - [ ] Erstelle eine geordnete **Projektstruktur mit Ressourcen-Ordnern**
   - [ ] Erstelle ein Bashscript für die Umsetzung
 
+- Aufgabe: Spielidee entwickeln
+  - Ziel: Projektorientierte Spieleentwicklung mit Python (MINT) 
+  - Projektideen umsetzen: Anfänger (z.B. Taschenrechner)
+  - Konzepte und Lernziele: 
+  
+  - [ ] **Modularer Aufbau der Projekte**:
+    - [ ] Unterteilen der komplexen Projekte in kleinere, aufeinander aufbauende Module. Erleichtert Einstieg und ermöglicht schrittweises Lernen.
+
+  - textbasierte **Struktogramm** (Flussdiagramm): logische Abfolge des Programms visualisieren.
+  - textbasierte **MindMap**: Struktur und Zusammenhänge visualisieren.
+
+- Erstelle zu jeder Spielidee eine kurze **Beschreibung** und welche **Konzepte** verwendet werden
+
+- **SMART-Ziele für die Projekte** 
+  - Projektideen umsetzen
+  - Spezifisch:
+  - Messbar:
+  - Attraktiv:
+  - Realistisch:
+  - Terminiert:
+  
+  - **Motivfindung**: Verbindung zwischen Zielen und persönlichen Werten
+  - **Mindset und positive Glaubenssätze**
+
+  - **Deadline und Roadmap mit Meilensteinen für Projekte**
+    - Projektideen umsetzen
+    - Visualisierung des Arbeitsflusses
+    - Start: (z.B. 30.9.2024)
+
+- **Kanban-Board und To-Do-Listen zur Projekt-/Aufgabenorganisation**
+  - Projektideen umsetzen
+  - visualisiert in einer Tabelle
+  - Priorisierung von Aufgaben nach Wichtigkeit und Dringlichkeit
+  - Begrenzung der gleichzeitigen Aufgaben 1-3x (WIP-Limit)
+  - Einrichtung des Kanban-Boards
+
+- **Keywords/Konzepte** erklären (Feynman-Methode)
+  - für Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen
+  - Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben
+  - Konkretes Beispiel und Analogie finden
+  - Ausgabe: in Markdown mit LaTeX-Mathe
+
+- **Vortrag** erstellen (etwa 2 Minuten)
+
+### Prompt - Anweisungsformulierung
+
+- [ ] Erstelle eine Formulierung.
+- [ ] Anweisungsformulierung auf Klarheit, Präzision und Verständlichkeit prüfen
 
 ### Textbearbeitung
 
 - [ ] 200-Wörter-Zusammenfassung erstellen
 - [ ] Text auf Grammatik, Rechtschreibung, Redundanz und Klarheit prüfen
-- [ ] Anweisungsformulierung auf Klarheit, Präzision und Verständlichkeit prüfen
 - [ ] Erstelle alle wichtigen Keywords als To-do-Liste, Ausgabe: in Markdown.
-- [ ] Erstelle eine Formulierung.
 
-### Simulation
+### Simulation mit Python
 
 - [ ] Python-Simulation erstellen
   - [ ] Geeignete Bibliotheken verwenden
@@ -130,7 +175,7 @@ bearbeitet am 29. September 2024
 
 1. Feynman-Methode anwenden
    - [ ] Komplexes Thema auswählen
-   - [ ] Einfache Erklärung formulieren (Laien, ohne die fachliche Tiefe zu vernachlässigen)
+   - [ ] Einfache Erklärung formulieren (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
    - [ ] Verständnislücken identifizieren und schließen
    - [ ] Erklärung überarbeiten und vereinfachen
 
@@ -184,18 +229,18 @@ bearbeitet am 29. September 2024
     - [ ] Methoden kombinieren für optimale Ergebnisse
     - [ ] Strategien bei Bedarf anpassen
 
-### 1. Verstehen und Erklären
+### Verstehen und Erklären
 
 **Feynman-Methode**
 
 - Konzept: Komplexe Themen so erklären, dass Laien sie verstehen
 - Vorgehen:
   1. Thema wählen und studieren
-  2. Einfache Erklärung formulieren (Laien, ohne die fachliche Tiefe zu vernachlässigen)
+  2. Einfache Erklärung formulieren (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
   3. Lücken im eigenen Verständnis identifizieren und schließen
   4. Erklärung überarbeiten und vereinfachen
 
-### 2. Strukturiertes Lesen und Verarbeiten
+### Strukturiertes Lesen und Verarbeiten
 
 **SQ3R-Methode**
 
@@ -205,7 +250,7 @@ bearbeitet am 29. September 2024
 - Recite (Kernaussagen wiedergeben)
 - Review (Gelerntes überprüfen)
 
-### 3. Zeiteinteilung und Fokus
+### Zeiteinteilung und Fokus
 
 **Pomodoro-Technik**
 
@@ -213,7 +258,7 @@ bearbeitet am 29. September 2024
 - Pro Block: 4 x (25 Minuten Arbeit + 5 Minuten Pause)
 - Zwischen Blöcken: 20-30 Minuten Pause
 
-### 4. Visualisierung und Vernetzung
+### Visualisierung und Vernetzung
 
 **MindMap-Methode**
 
@@ -222,7 +267,7 @@ bearbeitet am 29. September 2024
 - Unterzweige für Details und Zusammenhänge
 - Verwendung von Farben und Schlüsselwörtern
 
-### 5. Langfristiges Behalten
+### Langfristiges Behalten
 
 **Lernkarten und Spaced Repetition** (verteiltes Lernen)
 
@@ -230,7 +275,7 @@ bearbeitet am 29. September 2024
 - Wiederholung in zunehmend größeren Abständen
 - Algorithmus passt Intervalle an individuelle Lernfortschritte an
 
-### 6. Zielorientierung
+### Zielorientierung
 
 **SMART-Methode zur Zielsetzung**
 
@@ -245,7 +290,7 @@ bearbeitet am 29. September 2024
 - **Intrinsische Motivation** (aus eigenem Antrieb) identifizieren (Selbstverwirklichung)
 - Verbindung zwischen Zielen und persönlichen Werten herstellen
 
-### 7. Mentale Einstellung
+### Mentale Einstellung
 
 **Wachstumsorientiertes Mindset**
 
@@ -258,7 +303,7 @@ bearbeitet am 29. September 2024
 - Selbstwirksamkeit stärken
 - Positive **Affirmationen** (Denkweise) formulieren und verinnerlichen (Selbstvertrauen stärken)
 
-### 8. Aufgabenmanagement
+### Aufgabenmanagement
 
 **Kanban-Methode**
 
@@ -271,7 +316,7 @@ bearbeitet am 29. September 2024
 - Tägliche und wöchentliche Aufgabenlisten erstellen
 - Priorisierung nach Wichtigkeit und Dringlichkeit
 
-### 9. Projektorientiertes Lernen
+### Projektorientiertes Lernen
 
 - Anwendung theoretischer Konzepte in praktischen Projekten
 - Interdisziplinäre Verknüpfung von MINT-Fächern
@@ -322,24 +367,7 @@ WIP steht für "Work in Progress" (Arbeit in Bearbeitung). Das WIP-Limit ist ein
   - Oft in Kombination mit Lernkarten-Systemen wie Anki
   - Automatische Anpassung der Wiederholungsintervalle basierend auf der Leichtigkeit des Erinnerns
 
-## Kommunikationsanweisung für MINT-Bereiche (Bachelor-Niveau)
-
-- [ ] Sachlicher Kommunikationsstil
-- [ ] Neutrale Formulierungen
-- [ ] Fachliche Expertise (Bachelor-Niveau)
-- [ ] MINT-Fächer (Mathematik, Informatik, Naturwissenschaften, Technik)
-- [ ] Deutsche Sprache
-- [ ] Fachbegriffe erklären (Laien, ohne die fachliche Tiefe zu vernachlässigen)
-- [ ] Wissenschaftlicher Stil
-- [ ] Objektive Darstellung
-- [ ] Grundlegende Quellenangaben
-- [ ] Strukturierte Aufbereitung
-- [ ] Übersichtliche Gliederung
-- [ ] Qualitätssicherung
-- [ ] Anwendungsbezug
-- [ ] Praktische Beispiele
-- [ ] Interdisziplinäres Verständnis
-
+## Kommunikationsanweisung
 
 1. Kommunikationsstil
    - Sachlichen, neutralen und professionellen Ton verwenden.
@@ -361,7 +389,7 @@ WIP steht für "Work in Progress" (Arbeit in Bearbeitung). Das WIP-Limit ist ein
    - Wichtige Aussagen durch grundlegende Quellen belegen (vereinfachte Zitierweise ist ausreichend).
    - Sachverhalte strukturiert und nachvollziehbar aufbereiten.
    - Fachterminologie korrekt, aber sparsam einsetzen.
-   - Fachbegriffe bei erstmaliger Verwendung kurz erläutern. (Laien, ohne die fachliche Tiefe zu vernachlässigen)
+   - Fachbegriffe bei erstmaliger Verwendung kurz erläutern. (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
 
 5. Struktur und Format
    - Übersichtliche Gliederung mit Überschriften und Aufzählungen verwenden.
@@ -377,6 +405,22 @@ WIP steht für "Work in Progress" (Arbeit in Bearbeitung). Das WIP-Limit ist ein
    - Wo möglich, praktische Beispiele oder Anwendungsfälle zur Veranschaulichung theoretischer Konzepte einbinden.
    - Verbindungen zwischen verschiedenen MINT-Disziplinen aufzeigen, um interdisziplinäres Verständnis zu fördern.
 
+- [ ] Sachlicher Kommunikationsstil
+- [ ] Neutrale Formulierungen
+- [ ] Fachliche Expertise (Bachelor-Niveau)
+- [ ] MINT-Fächer (Mathematik, Informatik, Naturwissenschaften, Technik)
+- [ ] Deutsche Sprache
+- [ ] Fachbegriffe erklären (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
+- [ ] Wissenschaftlicher Stil
+- [ ] Objektive Darstellung
+- [ ] Grundlegende Quellenangaben
+- [ ] Strukturierte Aufbereitung
+- [ ] Übersichtliche Gliederung
+- [ ] Qualitätssicherung
+- [ ] Anwendungsbezug
+- [ ] Praktische Beispiele
+- [ ] Interdisziplinäres Verständnis
+
 ## Anleitung zur Textbearbeitung und -analyse mittels SQ3R-Methode
 
 - [ ] Survey (Überblick)
@@ -384,20 +428,19 @@ WIP steht für "Work in Progress" (Arbeit in Bearbeitung). Das WIP-Limit ist ein
   - [ ] Überschriften notieren
 - [ ] Question (Fragen stellen)
   - [ ] W-Fragen formulieren
-- [ ] Read (Lesen)
+- [ ] Read (Lesen) -> aktiv lesen und verstehen (40 \%) 
   - [ ] Wichtige Passagen markieren
   - [ ] Fachbegriffe nachschlagen
-- [ ] Recite (Wiedergeben)
+- [ ] Recite (Wiedergeben) -> das Gelernte erklären/wiederholen und Übungen durchführen (55 \%)
   - [ ] Hauptaussagen zusammenfassen
-  - [ ] Feynman-Technik anwenden (Laien, ohne die fachliche Tiefe zu vernachlässigen)
+  - [ ] Feynman-Technik anwenden (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
   - [ ] Beispiele und Analogien finden
-- [ ] Review (Überprüfen)
+- [ ] Review (Überprüfen) -> sowie einen Vortrag halten (5 \%)
   - [ ] Notizen prüfen
   - [ ] Offene Fragen klären
 - [ ] Strukturierte Notizen erstellen
 - [ ] Zusammenfassung verfassen
 - [ ] Kernaussagen wiedergeben
-- [ ] Praxisrelevanz aufzeigen
 
 ### Ziel
 
@@ -405,30 +448,30 @@ Effektive Bearbeitung und Analyse eines Fachtextes zur Verbesserung des Textvers
 
 ### Vorgehen
 
-#### 1. Survey (Überblick)
+#### Survey (Überblick)
 
 - Text überfliegen und Struktur erfassen
 - Überschriften, Zwischenüberschriften und hervorgehobene Begriffe notieren
 - Abbildungen und Tabellen identifizieren
 
-#### 2. Question (Fragen stellen)
+#### Question (Fragen stellen)
 
 - W-Fragen zu Überschriften und Kernaussagen formulieren
 - Fragen zu unbekannten Begriffen oder Konzepten notieren
 
-#### 3. Read (Lesen)
+#### Read (Lesen)
 
 - Text gründlich und aufmerksam lesen
 - Wichtige Passagen markieren oder unterstreichen
 - Unbekannte Fachbegriffe nachschlagen und notieren
 
-#### 4. Recite (Wiedergeben)
+#### Recite (Wiedergeben)
 
 - Hauptaussagen in eigenen Worten zusammenfassen
-- Feynman-Technik anwenden: Konzepte so erklären (Laien, ohne die fachliche Tiefe zu vernachlässigen)
+- Feynman-Technik anwenden: Konzepte so erklären (Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen, Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben)
 - Beispiele und Analogien zur Veranschaulichung komplexer Konzepte finden
 
-#### 5. Review (Überprüfen)
+#### Review (Überprüfen)
 
 - Notizen und Zusammenfassung auf Vollständigkeit und Korrektheit prüfen
 - Offene Fragen identifizieren und klären
