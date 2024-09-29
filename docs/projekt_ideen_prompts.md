@@ -149,12 +149,10 @@ bearbeitet am 29. September 2024
 
 - Erstelle zu jeder Spielidee eine kurze **Beschreibung** und welche **Konzepte** verwendet werden
 
-- **Git-Versionskontrolle**: Commit erstellen (Best Practices)
-  - Commit mit mehrzeiliger Nachricht erstellen
+- **Git-Versionskontrolle**: Commit erstellen (Conventional Commits)
   - Visualisierung des Commit-Prozesses
-  - Regelmäßige Commits (Fortschritt dokumentieren)
-  - Commit-Nachrichten konsistent halten (einheitliche Formate)
-  - Branching nutzen (für neue Features oder Bugfixe)
+    - Regelmäßige Commits (Fortschritt dokumentieren)
+    - Branching nutzen (für neue Features oder Bugfixe)
 
 - **SMART-Ziele für die Projekte** 
   - Projektideen umsetzen
