@@ -1,3 +1,9 @@
+---
+title: "README"
+author: "Jan Unger"
+date: "2024-09-29"
+---
+
 # Projektorientierte Spieleentwicklung mit Python (MINT)
 
 bearbeitet am 29. September 2024

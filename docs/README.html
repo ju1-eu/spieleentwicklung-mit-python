@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>README</title>
+    <link rel="stylesheet" href="markdown_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-markdown.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container" style="max-width: 75rem"><h1
+id="projektorientierte-spieleentwicklung-mit-python-mint">Projektorientierte
+Spieleentwicklung mit Python (MINT)</h1>
+<p>bearbeitet am 29. September 2024</p>
+<ul>
+<li><a
+href="#projektorientierte-spieleentwicklung-mit-python-mint">Projektorientierte
+Spieleentwicklung mit Python (MINT)</a>
+<ul>
+<li><a href="#übersicht">Übersicht</a></li>
+<li><a href="#struktur">Struktur</a></li>
+<li><a href="#nutzung---git-und-conda-umgebung">Nutzung - Git und
+Conda-Umgebung</a>
+<ul>
+<li><a
+href="#conda-umgebung-erstellen-aktualisieren-und-aktivieren">Conda-Umgebung
+erstellen, aktualisieren und aktivieren</a></li>
+</ul></li>
+<li><a href="#lizenz">Lizenz</a></li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#erstellen-und-klonen-des-repositories">Erstellen und
+Klonen des Repositories</a></li>
+<li><a href="#erstellen-der-conda-umgebung">Erstellen der
+Conda-Umgebung</a></li>
+<li><a href="#aktivieren-der-umgebung">Aktivieren der Umgebung</a></li>
+<li><a
+href="#installation-von-pygame-mit-avx2-unterstützung">Installation von
+Pygame mit AVX2-Unterstützung</a></li>
+</ul></li>
+<li><a href="#nutzung-von-github-features">Nutzung von GitHub
+Features</a>
+<ul>
+<li><a href="#integration-von-cicd-mit-github-actions">Integration von
+CI/CD mit GitHub Actions</a></li>
+<li><a href="#vorteile-von-cicd">Vorteile von CI/CD</a></li>
+<li><a href="#erläuterung-der-workflow-schritte">Erläuterung der
+Workflow-Schritte</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="übersicht">Übersicht</h2>
+<p>Dieses Projekt zielt darauf ab, das Erlernen und Anwenden von
+Python-Programmierung durch die Entwicklung von Spielen zu fördern. Der
+Fokus liegt auf projektorientiertem Lernen in den MINT-Fächern
+(Mathematik, Informatik, Naturwissenschaften, Technik).</p>
+<h2 id="struktur">Struktur</h2>
+<ul>
+<li><strong>docs/</strong>: Dokumentationen wie Benutzerhandbuch,
+Entwicklerdokumentation, Struktogramme, MindMaps und
+Lizenzinformationen.</li>
+<li><strong>src/</strong>: Quellcode der Spiele, unterteilt nach
+Schwierigkeitsgraden (Anfänger, Fortgeschrittene, Profi).</li>
+<li><strong>assets/</strong>: Gemeinsame Ressourcen wie Bilder, Sounds,
+Modelle und Texturen.</li>
+<li><strong>tests/</strong>: Unit-Tests, organisiert nach
+Schwierigkeitsgraden.</li>
+<li><strong>scripts/</strong>: Hilfsskripte zur Automatisierung von
+Aufgaben.</li>
+<li><strong>README.md</strong>: Hauptdokumentation des Projekts.</li>
+<li><strong>LICENSE</strong>: Lizenzinformationen (MIT-Lizenz).</li>
+<li><strong>requirements.txt</strong>: Python-Abhängigkeiten.</li>
+</ul>
+<h2 id="nutzung---git-und-conda-umgebung">Nutzung - Git und
+Conda-Umgebung</h2>
+<ol type="1">
+<li><p><strong>Einrichten der Entwicklungsumgebung</strong></p>
+<pre><code>cd Spieleentwicklung_Python
+./scripts/setup_environment.sh</code></pre></li>
+<li><p><strong>Projekt entwickeln</strong> Navigieren Sie zu einem der
+Projekte im <code>src/</code> Verzeichnis und beginnen Sie mit der
+Entwicklung.</p></li>
+<li><p><strong>Versionierung mit Git</strong></p>
+<ul>
+<li><p>Initialisieren des Git-Repositories:</p>
+<pre><code>git init
+git add .
+git commit -m &quot;Initial commit&quot;
+# Voraussetzung: GitHub
+git push -u origin main</code></pre></li>
+</ul></li>
+</ol>
+<h3
+id="conda-umgebung-erstellen-aktualisieren-und-aktivieren">Conda-Umgebung
+erstellen, aktualisieren und aktivieren</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Umgebung erstellen oder aktualisieren</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yml <span class="co"># das erste mal</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env update <span class="at">--file</span> environment.yml <span class="at">--prune</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Umgebung aktivieren</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate meinenv</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Conda-Kanäle konfigurieren</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> config <span class="at">--add</span> channels conda-forge</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> config <span class="at">--set</span> channel_priority strict</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> update <span class="at">--all</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Pygame überprüfen und testen</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install pygame  </span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> show pygame</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> list pytorch</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Jupyter Lab starten oder Python-Skript ausführen</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> ./script.py</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Dokumentation konvertieren</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Umgebung deaktivieren</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code></pre></div>
+<h2 id="lizenz">Lizenz</h2>
+<p>Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere
+Informationen finden Sie in der <a href="LICENSE">LICENSE</a> Datei.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="erstellen-und-klonen-des-repositories">Erstellen und Klonen des
+Repositories</h3>
+<p>Führen Sie die folgenden Schritte aus, um das Git-Repository zu
+initialisieren und mit GitHub zu verbinden:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Git-Konfiguration überprüfen</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--list</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># README.md erstellen und initialen Commit durchführen</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;# Spieleentwicklung mit Python&quot;</span> <span class="op">&gt;&gt;</span> README.md</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Initialer Commit&quot;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># GitHub-Repository verbinden und pushen</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:ju1-eu/spieleentwicklung-mit-python.git</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Tagging der Version 1.0</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> tag <span class="at">-a</span> v1.0 <span class="at">-m</span> <span class="st">&quot;Version 1.0: Initiale Veröffentlichung&quot;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin v1.0</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Nutzung von Git und GitHub für Zusammenarbeit</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">## a) Branching-Strategie</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Neuen Feature-Branch erstellen und pushen</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature/neues-feature</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Beschreibung des Features&quot;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin feature/neues-feature</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Pull Request auf GitHub erstellen:</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Gehe zu deinem Repository auf GitHub.</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Klicke auf &quot;Compare &amp; pull request&quot; für den neuen Branch.</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Füge eine Beschreibung hinzu und klicke auf &quot;Create pull request&quot;.</span></span></code></pre></div>
+<h3 id="erstellen-der-conda-umgebung">Erstellen der Conda-Umgebung</h3>
+<p>Richten Sie eine Conda-Umgebung ein, um die benötigten Abhängigkeiten
+zu verwalten:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conda aktualisieren</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> update <span class="at">-n</span> base <span class="at">-c</span> defaults conda</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> update <span class="at">--all</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> init zsh</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zshrc</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufräumen</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> clean <span class="at">--all</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Umgebung aktualisieren oder erstellen</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env update <span class="at">-f</span> environment.yml</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Um eine Umgebung zu entfernen:</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># conda env remove -n meinenv</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Um eine Umgebung neu zu erstellen:</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># conda env create -f environment.yml</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation von Jupyter Notebook Erweiterungen</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge jupyter_contrib_nbextensions</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> contrib nbextension install <span class="at">--user</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Konvertieren von Jupyter Notebooks</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> python code/mein_notebook.ipynb</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> markdown code/mein_notebook.ipynb</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> html code/mein_notebook.ipynb</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> nbconvert <span class="at">--to</span> pdf code/mein_notebook.ipynb</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co">#jupyter nbconvert --to pdf --template-file ./custom_template.tplx code/mein_notebook.ipynb</span></span></code></pre></div>
+<p>Jupyter Notebook als Python-Skript exportieren mittels Git Hook</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Git Hook</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> .git/hooks</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> pre-commit</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   <span class="co">#!/bin/sh</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>   <span class="ex">jupyter</span> nbconvert <span class="at">--to</span> script ../../code/mein_notebook.ipynb</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">git</span> add ../../code/mein_notebook.py</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x pre-commit</span></code></pre></div>
+<h3 id="aktivieren-der-umgebung">Aktivieren der Umgebung</h3>
+<p>Aktivieren und verwalten Sie die Conda-Umgebung wie folgt:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Liste der Umgebungen anzeigen</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env list</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Umgebung aktivieren</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate meinenv</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Überprüfen des Python-Pfades und der Version</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">which</span> python3</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">--version</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> info</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> update <span class="at">--all</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Umgebung entfernen oder deaktivieren</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># conda env remove -n meinenv</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co"># conda deactivate</span></span></code></pre></div>
+<h3 id="installation-von-pygame-mit-avx2-unterstützung">Installation von
+Pygame mit AVX2-Unterstützung</h3>
+<p>Um Pygame mit AVX2-Unterstützung zu installieren, folgen Sie diesen
+Schritten:</p>
+<ol type="1">
+<li><p><strong>SDL-Entwicklerbibliotheken installieren:</strong></p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install sdl2 sdl2_image sdl2_mixer sdl2_ttf portmidi</span></code></pre></div></li>
+<li><p><strong>Umgebungsvariablen für SDL-Pfade setzen:</strong></p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">LDFLAGS</span><span class="op">=</span><span class="st">&quot;-L/usr/local/opt/sdl2/lib&quot;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">CPPFLAGS</span><span class="op">=</span><span class="st">&quot;-I/usr/local/opt/sdl2/include&quot;</span></span></code></pre></div></li>
+<li><p><strong>AVX2-Erkennung aktivieren:</strong></p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PYGAME_DETECT_AVX2</span><span class="op">=</span>1</span></code></pre></div></li>
+<li><p><strong>Pygame neu installieren:</strong></p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--upgrade</span> pip</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--no-binary</span> :all: pygame</span></code></pre></div></li>
+</ol>
+<h2 id="nutzung-von-github-features">Nutzung von GitHub Features</h2>
+<ul>
+<li><strong>Issues:</strong> Für Bug-Tracking und Feature-Anfragen.</li>
+<li><strong>Pull Requests:</strong> Für Code-Reviews und
+Zusammenarbeit.</li>
+<li><strong>Projects:</strong> Für die Organisation von Aufgaben im
+Kanban-Stil.</li>
+</ul>
+<h3 id="integration-von-cicd-mit-github-actions">Integration von CI/CD
+mit GitHub Actions</h3>
+<p>Continuous Integration (CI) und Continuous Deployment (CD) sind
+essenzielle Praktiken in der modernen Softwareentwicklung. Sie
+ermöglichen es Teams, Code schneller und zuverlässiger zu entwickeln, zu
+testen und bereitzustellen. GitHub Actions bietet eine leistungsstarke
+und flexible Möglichkeit, CI/CD-Pipelines direkt in GitHub-Repositories
+zu implementieren.</p>
+<h3 id="vorteile-von-cicd">Vorteile von CI/CD</h3>
+<ul>
+<li><strong>Frühzeitige Fehlererkennung</strong></li>
+<li><strong>Verbesserte Codequalität</strong></li>
+<li><strong>Schnellere Bereitstellung von Updates</strong></li>
+<li><strong>Erhöhte Entwicklerproduktivität</strong></li>
+</ul>
+<p>Implementieren Sie CI/CD mit GitHub Actions, um automatische Tests
+und Deployments durchzuführen.</p>
+<p><strong>Beispiel
+<code>.github/workflows/python-app.yml</code>:</strong></p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Python application</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at"> main </span><span class="kw">]</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pull_request</span><span class="kw">:</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at"> main </span><span class="kw">]</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">build</span><span class="kw">:</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> macos-latest</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v2</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Conda</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> conda-incubator/setup-miniconda@v2</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">environment-file</span><span class="kw">:</span><span class="at"> environment.yml</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">activate-environment</span><span class="kw">:</span><span class="at"> meinenv</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">python-version</span><span class="kw">:</span><span class="at"> </span><span class="fl">3.12</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install pip dependencies</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="fu">      run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>        pip install -r requirements.txt</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run tests</span></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="fu">      run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>        pytest</span></code></pre></div>
+<h3 id="erläuterung-der-workflow-schritte">Erläuterung der
+Workflow-Schritte</h3>
+<ol type="1">
+<li><strong>Trigger:</strong> Der Workflow wird bei Pushes und Pull
+Requests auf den <code>main</code>-Branch ausgelöst.</li>
+<li><strong>Runner:</strong> Der Job läuft auf einem macOS-System.</li>
+<li><strong>Checkout:</strong> Der Repository-Code wird
+ausgecheckt.</li>
+<li><strong>Conda Setup:</strong> Conda wird mit einer spezifischen
+Umgebung und Python-Version eingerichtet.</li>
+<li><strong>Dependency Installation:</strong> Pip-Abhängigkeiten werden
+installiert.</li>
+<li><strong>Tests:</strong> Pytest wird ausgeführt, um die Tests
+durchzuführen.</li>
+</ol>
+<p><strong>Anpassungsmöglichkeiten</strong></p>
+<ul>
+<li><strong>Für Node.js-Projekte:</strong> Ersetzen Sie das Conda-Setup
+und pip durch Node.js-Setup und npm/yarn.</li>
+<li><strong>Für Deployment:</strong> Fügen Sie einen Schritt hinzu, der
+den Code auf einen Server oder Cloud-Dienst deployed.</li>
+</ul>
+<p><strong>Sicherheitshinweis</strong></p>
+<p>Beim Einsatz von GitHub Actions ist es wichtig, sensible Daten wie
+API-Schlüssel oder Zugangsdaten als <a
+href="https://docs.github.com/en/actions/security-guides/encrypted-secrets">GitHub
+Secrets</a> zu speichern. Diese können dann sicher in Ihren Workflows
+verwendet werden, ohne sie im Code preiszugeben.</p>
+<p><strong>Hinweis:</strong> Stellen Sie sicher, dass Sie eine
+<code>requirements.txt</code>-Datei haben, wenn Sie zusätzliche
+<code>pip</code>-Pakete verwenden.</p>
+<p><strong>Weitere Ressourcen</strong></p>
+<ul>
+<li><a href="https://docs.github.com/en/actions">GitHub Actions
+Dokumentation</a></li>
+<li><a href="https://github.com/marketplace?type=actions">GitHub Actions
+Marketplace</a></li>
+</ul></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        if (typeof Prism !== 'undefined') Prism.highlightAll();
+        if (typeof MathJax !== 'undefined') MathJax.typeset();
+      });
+    </script>
+  </body>
+</html>

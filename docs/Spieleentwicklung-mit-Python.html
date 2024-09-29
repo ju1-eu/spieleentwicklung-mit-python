@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spieleentwicklung-mit-Python</title>
+    <link rel="stylesheet" href="markdown_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-markdown.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container" style="max-width: 75rem"><h1
+id="projektorientierte-spieleentwicklung-mit-python-mint">Projektorientierte
+Spieleentwicklung mit Python (MINT)</h1>
+<p>bearbeitet am 29. September 2024</p>
+<ul>
+<li><a
+href="#projektorientierte-spieleentwicklung-mit-python-mint">Projektorientierte
+Spieleentwicklung mit Python (MINT)</a>
+<ul>
+<li><a href="#spieleentwicklung-mit-python">Spieleentwicklung mit
+Python</a>
+<ul>
+<li><a href="#ziel">Ziel</a></li>
+<li><a href="#projektstruktur">Projektstruktur</a></li>
+<li><a href="#projektideen">Projektideen</a>
+<ul>
+<li><a href="#anfänger-einfach">Anfänger (Einfach)</a></li>
+<li><a href="#fortgeschritten">Fortgeschritten</a></li>
+<li><a href="#profi-anspruchsvoll">Profi (Anspruchsvoll)</a></li>
+</ul></li>
+<li><a href="#hinweise-zur-umsetzung">Hinweise zur Umsetzung</a></li>
+<li><a href="#erweitertes-3d-rennspiel-mit-physik-fokus">Erweitertes
+3D-Rennspiel mit Physik-Fokus</a>
+<ul>
+<li><a href="#beschreibung">Beschreibung</a></li>
+<li><a href="#lernziele">Lernziele</a></li>
+<li><a href="#meilensteine">Meilensteine</a></li>
+<li><a href="#technologien">Technologien</a></li>
+<li><a href="#entwicklungspraktiken">Entwicklungspraktiken</a></li>
+<li><a href="#interdisziplinäre-aspekte">Interdisziplinäre
+Aspekte</a></li>
+<li><a
+href="#erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="spieleentwicklung-mit-python">Spieleentwicklung mit Python</h2>
+<ol type="1">
+<li>Projektstruktur
+<ul class="task-list">
+<li><label><input type="checkbox" />Kanban-Board erstellen</label></li>
+<li><label><input type="checkbox" />Ordnerstruktur anlegen</label></li>
+<li><label><input type="checkbox" />Git-Repository
+initialisieren</label></li>
+<li><label><input type="checkbox" />GitHub-Projekt
+einrichten</label></li>
+<li><label><input type="checkbox" />Spielidee entwickeln</label></li>
+<li><label><input type="checkbox" />Struktogramm zeichnen</label></li>
+<li><label><input type="checkbox" />MindMap erstellen</label></li>
+<li><label><input type="checkbox" />README.md mit MIT-Lizenz
+verfassen</label></li>
+</ul></li>
+<li>Entwicklungsprozess
+<ul class="task-list">
+<li><label><input type="checkbox" />Python-Entwicklungsumgebung
+einrichten</label></li>
+<li><label><input type="checkbox" />Spiellogik
+implementieren</label></li>
+<li><label><input type="checkbox" />Code dokumentieren (Docstrings,
+Kommentare)</label></li>
+<li><label><input type="checkbox" />Versionskontrolle nutzen
+(regelmäßige Commits)</label></li>
+<li><label><input type="checkbox" />Code-Review durchführen</label></li>
+</ul></li>
+<li>Konzepte (je nach Projektstufe)
+<ul class="task-list">
+<li><label><input type="checkbox" />Variablen und
+Datentypen</label></li>
+<li><label><input type="checkbox" />Eingabe/Ausgabe</label></li>
+<li><label><input type="checkbox" />Verzweigungen und
+Schleifen</label></li>
+<li><label><input type="checkbox" />Funktionen</label></li>
+<li><label><input type="checkbox" />Listen und Dictionaries</label></li>
+<li><label><input type="checkbox" />Objektorientierte Programmierung
+(OOP)</label></li>
+<li><label><input type="checkbox" />GUI-Programmierung</label></li>
+<li><label><input type="checkbox" />Event-Handling</label></li>
+<li><label><input type="checkbox" />Kollisionserkennung</label></li>
+<li><label><input type="checkbox" />Spieleschleife</label></li>
+<li><label><input type="checkbox" />Physik-Simulation</label></li>
+<li><label><input type="checkbox" />Netzwerkprogrammierung</label></li>
+<li><label><input type="checkbox" />Algorithmen (z.B. Minimax,
+Alpha-Beta-Pruning)</label></li>
+<li><label><input type="checkbox" />Prozedurale Generierung</label></li>
+<li><label><input type="checkbox" />3D-Grafik</label></li>
+<li><label><input type="checkbox" />Künstliche Intelligenz
+(KI)</label></li>
+</ul></li>
+<li>Projektideen umsetzen: Anfänger
+<ul class="task-list">
+<li><label><input type="checkbox" />Quiz-Spiel</label></li>
+<li><label><input type="checkbox" />Tic-Tac-Toe</label></li>
+<li><label><input type="checkbox" />Einfacher
+Taschenrechner</label></li>
+</ul></li>
+<li>Fortgeschritten
+<ul class="task-list">
+<li><label><input type="checkbox" />Memory-Spiel</label></li>
+<li><label><input type="checkbox" />Snake</label></li>
+<li><label><input type="checkbox" />Breakout-Klon</label></li>
+</ul></li>
+<li>Profi
+<ul class="task-list">
+<li><label><input type="checkbox" />Schach mit KI-Gegner</label></li>
+<li><label><input type="checkbox" />3D-Rennspiel</label></li>
+</ul></li>
+<li>Zusätzliche Aufgaben
+<ul class="task-list">
+<li><label><input type="checkbox" />Interdisziplinäre Aspekte
+einbeziehen (z.B. Physik in Spielen)</label></li>
+<li><label><input type="checkbox" />Benutzerhandbuch
+schreiben</label></li>
+<li><label><input type="checkbox" />Spieletests durchführen und Feedback
+einarbeiten</label></li>
+<li><label><input type="checkbox" />Präsentation des Projekts
+vorbereiten</label></li>
+</ul></li>
+</ol>
+<h3 id="ziel">Ziel</h3>
+<p>Erlernen und Anwenden von Python-Programmierung durch die Entwicklung
+von Spielen, mit Fokus auf projektorientiertes Lernen in
+MINT-Fächern.</p>
+<h3 id="projektstruktur">Projektstruktur</h3>
+<ul>
+<li>Kanban-Board zur Aufgabenorganisation</li>
+<li>Geordnete Projektstruktur mit Ressourcen-Ordnern</li>
+<li>Versionskontrolle mit Git/GitHub</li>
+<li>Entwicklungsprozess: Spielidee -&gt; Struktogramm -&gt;
+Python-Code</li>
+<li>MindMap zur Visualisierung von Zusammenhängen</li>
+<li>Umfassende Code-Dokumentation</li>
+<li>README-Datei mit MIT-Lizenz</li>
+</ul>
+<h3 id="projektideen">Projektideen</h3>
+<h4 id="anfänger-einfach">Anfänger (Einfach)</h4>
+<ol type="1">
+<li>Quiz-Spiel
+<ul>
+<li>Beschreibung: Multiple-Choice-Fragen zu MINT-Themen</li>
+<li>Konzepte: Listen, Dictionaries, Funktionen</li>
+</ul></li>
+<li>Tic-Tac-Toe
+<ul>
+<li>Beschreibung: Klassisches 3x3-Gitter-Spiel für zwei Spieler</li>
+<li>Konzepte: 2D-Listen, Funktionen, Bedingungen</li>
+</ul></li>
+<li>Einfacher Taschenrechner
+<ul>
+<li>Beschreibung: GUI-basierter Rechner für Grundrechenarten</li>
+<li>Konzepte: GUI-Programmierung (z.B. mit Tkinter), Funktionen</li>
+</ul></li>
+</ol>
+<h4 id="fortgeschritten">Fortgeschritten</h4>
+<ol type="1">
+<li>Memory-Spiel
+<ul>
+<li>Beschreibung: Kartenpaare finden mit GUI</li>
+<li>Konzepte: OOP, Event-Handling, grundlegende Spielegrafik</li>
+</ul></li>
+<li>Snake
+<ul>
+<li>Beschreibung: Klassisches Snake-Spiel mit wachsender Schlange</li>
+<li>Konzepte: OOP, Kollisionserkennung, Spieleschleife</li>
+</ul></li>
+<li>Breakout-Klon
+<ul>
+<li>Beschreibung: Ball und Paddel zum Zerstören von Blöcken</li>
+<li>Konzepte: Physik-Simulation, Spielobjekte, Punktezählung</li>
+</ul></li>
+</ol>
+<h4 id="profi-anspruchsvoll">Profi (Anspruchsvoll)</h4>
+<ol type="1">
+<li>Schach mit KI-Gegner
+<ul>
+<li>Beschreibung: Vollständiges Schachspiel mit KI-basiertem Gegner</li>
+<li>Konzepte: Komplexe Algorithmen, Minimax, Alpha-Beta-Pruning</li>
+</ul></li>
+<li>3D-Rennspiel
+<ul>
+<li>Beschreibung: Einfaches 3D-Rennspiel mit mehreren Strecken</li>
+<li>Konzepte: 3D-Grafik (z.B. mit Panda3D), Physik-Engine</li>
+</ul></li>
+</ol>
+<h3 id="hinweise-zur-umsetzung">Hinweise zur Umsetzung</h3>
+<ol type="1">
+<li>Erweiterte Interdisziplinarität:
+<ul class="task-list">
+<li><label><input type="checkbox" />3D-Rennspiel mit
+Physik-Fokus:</label>
+<ul>
+<li>Implementiere realistische Fahrzeugphysik (Beschleunigung, Bremsen,
+Kurvenfahrt)</li>
+<li>Simuliere Luftwiderstand und Bodenhaftung</li>
+<li>Berechne Kraftstoffverbrauch basierend auf Fahrverhalten</li>
+</ul></li>
+</ul></li>
+<li>Detailliertere Projektbeschreibungen:
+<ul class="task-list">
+<li><label><input type="checkbox" />Für jedes Projekt:</label>
+<ul>
+<li>Definiere spezifische Lernziele (z.B. “Verstehen und Anwenden von
+OOP-Konzepten”)</li>
+<li>Skizziere potenzielle Herausforderungen (z.B. “Effiziente
+Kollisionserkennung”)</li>
+<li>Lege Meilensteine fest (z.B. “1. Basisspiel, 2. Punktesystem, 3.
+Mehrspieler-Modus”)</li>
+</ul></li>
+</ul></li>
+<li>Integration von Softwareentwicklungspraktiken:
+<ul class="task-list">
+<li><label><input type="checkbox" />Füge jedem Projekt folgende Aspekte
+hinzu:</label>
+<ul>
+<li>Erstelle Unit-Tests für kritische Funktionen</li>
+<li>Richte GitHub Actions für automatisierte Tests und Builds ein</li>
+<li>Integriere Pylint oder Flake8 für statische Codeanalyse</li>
+</ul></li>
+</ul></li>
+<li>Datenbank-Integration:
+<ul class="task-list">
+<li><label><input type="checkbox" />Erweitere die Projekte um
+Datenbankfunktionalität:</label>
+<ul>
+<li>Quiz-Spiel: Speichere Fragen und Antworten in SQLite</li>
+<li>Snake: Implementiere lokales Highscore-System mit SQLite</li>
+<li>Schach: Nutze PostgreSQL für Online-Ranglisten und
+Spielstatistiken</li>
+</ul></li>
+</ul></li>
+<li>Erweiterte Benutzerinteraktion:
+<ul class="task-list">
+<li><label><input type="checkbox" />Für jedes Projekt:</label>
+<ul>
+<li>Entwerfe ein benutzerfreundliches UI mit Tkinter oder PyQt</li>
+<li>Implementiere Tastatur- und Maussteuerung für Barrierefreiheit</li>
+<li>Füge In-Game-Feedback und Bewertungssystem hinzu</li>
+</ul></li>
+</ul></li>
+<li>Erweiterung des Technologie-Stacks:
+<ul class="task-list">
+<li><label><input type="checkbox" />Entwickle Web-Versionen der
+Spiele:</label>
+<ul>
+<li>Setze das Quiz-Spiel mit Flask um</li>
+<li>Erstelle eine Django-basierte Plattform für das Schachspiel</li>
+</ul></li>
+<li><label><input type="checkbox" />Portiere Snake auf Android mit
+Pygame-SDL2</label></li>
+</ul></li>
+<li>Projektmanagement-Aspekte stärken:
+<ul class="task-list">
+<li><label><input type="checkbox" />Integriere agile Methoden:</label>
+<ul>
+<li>Nutze GitHub Projects für Scrum-Boards</li>
+<li>Plane wöchentliche Sprints mit klaren Zielen</li>
+<li>Führe regelmäßige Code-Reviews durch</li>
+</ul></li>
+</ul></li>
+</ol>
+<h3 id="erweitertes-3d-rennspiel-mit-physik-fokus">Erweitertes
+3D-Rennspiel mit Physik-Fokus</h3>
+<h4 id="beschreibung">Beschreibung</h4>
+<p>Entwickle ein 3D-Rennspiel mit realistischer Fahrzeugphysik,
+Streckeneditor und Online-Multiplayer.</p>
+<h4 id="lernziele">Lernziele</h4>
+<ul>
+<li>Anwendung von 3D-Grafikprogrammierung mit Panda3D</li>
+<li>Implementierung komplexer Physiksimulationen</li>
+<li>Entwicklung von Netzwerkfunktionalität für Multiplayer</li>
+<li>Datenbankdesign und -optimierung für Spielerdaten und
+Ranglisten</li>
+</ul>
+<h4 id="meilensteine">Meilensteine</h4>
+<ol type="1">
+<li>Basisspiel mit einer Strecke und einem Fahrzeug</li>
+<li>Implementierung der Fahrzeugphysik</li>
+<li>Streckeneditor und Speichersystem</li>
+<li>Online-Multiplayer und Ranglisten</li>
+<li>Performance-Optimierung und Polishing</li>
+</ol>
+<h4 id="technologien">Technologien</h4>
+<ul>
+<li>Python mit Panda3D für 3D-Grafik</li>
+<li>SQLite für lokale Daten, PostgreSQL für Online-Funktionen</li>
+<li>Flask für Web-API (Ranglisten, Benutzerprofile)</li>
+</ul>
+<h4 id="entwicklungspraktiken">Entwicklungspraktiken</h4>
+<ul>
+<li>Test-Driven Development mit unittest</li>
+<li>Kontinuierliche Integration mit GitHub Actions</li>
+<li>Code-Reviews und Pair-Programming-Sessions</li>
+</ul>
+<h4 id="interdisziplinäre-aspekte">Interdisziplinäre Aspekte</h4>
+<ul>
+<li>Physik: Fahrzeugdynamik, Kraftstoffverbrauch, Aerodynamik</li>
+<li>Mathematik: 3D-Transformationen, Kollisionsberechnung</li>
+<li>Design: UI/UX, Streckendesign</li>
+</ul>
+<h4 id="erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</h4>
+<ul>
+<li>KI-gesteuerte Gegner mit maschinellem Lernen</li>
+</ul></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        if (typeof Prism !== 'undefined') Prism.highlightAll();
+        if (typeof MathJax !== 'undefined') MathJax.typeset();
+      });
+    </script>
+  </body>
+</html>
