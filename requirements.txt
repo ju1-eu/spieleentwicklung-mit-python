@@ -1,0 +1,12 @@
+# Allgemeine Abhängigkeiten für das gesamte Projekt
+
+# Flask für Web-Anwendungen
+Flask
+
+# Pygame für Spieleentwicklung
+pygame
+
+# Panda3D für 3D-Spieleentwicklung
+panda3d
+
+# Weitere Abhängigkeiten können hier hinzugefügt werden
