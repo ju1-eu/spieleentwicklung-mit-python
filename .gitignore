@@ -29,6 +29,11 @@ venv/
 *.out
 *.toc
 
+# HTML
+*.html
+# Ausnahme: Verfolge die Datei template.html
+!template.html
+
 # Editor spezifisch
 .vscode/
 .idea/
