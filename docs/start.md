@@ -4,7 +4,12 @@ title: Startseite
 
 # Start
 
+## Benutzerhandbuch
+- [Benutzerhandbuch](Benutzerhandbuch/Benutzerhandbuch.html)
+
 - [Deadline-Roadmap-mit-Meilensteinen](Deadline-Roadmap-mit-Meilensteinen.html)
+
+- [Entwicklerdokumentation-Benutzerhandbuch-Tic-Tac-Toe](Entwicklerdokumentation-Benutzerhandbuch-Tic-Tac-Toe.html)
 
 - [Implementierung-Logik-Tic-Tac-Toe](Implementierung-Logik-Tic-Tac-Toe.html)
 

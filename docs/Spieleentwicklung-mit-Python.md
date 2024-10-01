@@ -40,9 +40,10 @@ bearbeitet am 29. September 2024
 
 2. Entwicklungsprozess
    - [x] Python-Entwicklungsumgebung einrichten
-   - [ ] Spiellogik implementieren
-   - [ ] Code dokumentieren (Docstrings, Kommentare)
-   - [ ] Versionskontrolle nutzen (regelmäßige Commits)
+   - [x] Spiellogik implementieren
+   - [x] Code dokumentieren (Docstrings, Kommentare)
+   - [x] Entwicklerdokumentation und Benutzerhandbuch
+   - [x] Versionskontrolle nutzen (regelmäßige Commits)
    - [ ] Code-Review durchführen
 
 3. Konzepte (je nach Projektstufe)

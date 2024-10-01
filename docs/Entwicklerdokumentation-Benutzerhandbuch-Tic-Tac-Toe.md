@@ -1,5 +1,5 @@
 ---
-title: "Beschreibung-main"
+title: "Entwicklerdokumentation-Benutzerhandbuch-Tic-Tac-Toe"
 author: "Jan Unger"
 date: "2024-10-01"
 ---
