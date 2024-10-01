@@ -78,7 +78,7 @@ conda list pytorch
 
 # Jupyter Lab starten oder Python-Skript ausführen
 jupyter lab
-python3 ./script.py
+#python3 ./script.py
 
 # Dokumentation konvertieren
 make

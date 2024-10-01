@@ -1,21 +1,15 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
+# src/test_installation.py
 import sys
-print(sys.executable)
-print(sys.version)
-import numpy as np
-print(np.__version__)
-import matplotlib.pyplot as plt
-plt.plot([1, 2, 3, 4])
-plt.show()
+import tkinter
+import pygame
 
+print("Python-Version:", sys.version)
+print("tkinter-Version:", tkinter.TkVersion)
+print("pygame-Version:", pygame.ver)
 
-# In[ ]:
-
+root = tkinter.Tk()
+root.title("Testfenster")
+root.mainloop()
 
 
 

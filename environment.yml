@@ -18,7 +18,10 @@ dependencies:
   - pytorch
   - nodejs
   - python-lsp-server
+  - tk
+  - pytest
   - pip
   - pip:
       - requests
       - django
+      - pygame

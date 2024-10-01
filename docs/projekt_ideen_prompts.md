@@ -147,9 +147,11 @@ bearbeitet am 29. September 2024
   - textbasierte **Struktogramm** (Flussdiagramm): logische Abfolge des Programms visualisieren.
   - textbasierte **MindMap**: Struktur und Zusammenhänge visualisieren.
 
+- Unterstützung bei der schrittweisen **Implementierung der Programmlogik und Testung**
+
 - Erstelle zu jeder Spielidee eine kurze **Beschreibung** und welche **Konzepte** verwendet werden
 
-- **Git-Versionskontrolle**: Commit erstellen (Conventional Commits)
+- **Git-Versionskontrolle**: Conventional Commit erstellen
   - Visualisierung des Commit-Prozesses
     - Regelmäßige Commits (Fortschritt dokumentieren)
     - Branching nutzen (für neue Features oder Bugfixe)
@@ -169,18 +171,18 @@ bearbeitet am 29. September 2024
     - Projektideen umsetzen
     - Visualisierung des Arbeitsflusses
     - Start: (z.B. 30.9.2024)
+    - Einrichtung der Roadmap mit Meilensteinen
 
 - **Kanban-Board und To-Do-Listen zur Projekt-/Aufgabenorganisation**
   - Projektideen umsetzen
   - visualisiert in einer Tabelle
   - Priorisierung von Aufgaben nach Wichtigkeit und Dringlichkeit
   - Begrenzung der gleichzeitigen Aufgaben 1-3x (WIP-Limit)
-  - Einrichtung des Kanban-Boards
 
 - **Keywords/Konzepte** erklären (Feynman-Methode)
   - für Laien und Experten -> ohne die fachliche Tiefe zu vernachlässigen
   - Fachbegriffe, Fakten, Zahlenwerte, Messwerte präzise wiedergeben
-  - Konkretes Beispiel und Analogie finden
+  - Beispiel und Analogie finden
   - Ausgabe: in Markdown mit LaTeX-Mathe
 
 - **Vortrag** erstellen (etwa 2 Minuten)

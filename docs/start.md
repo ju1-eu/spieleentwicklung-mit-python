@@ -6,15 +6,19 @@ title: Startseite
 
 - [Deadline-Roadmap-mit-Meilensteinen](Deadline-Roadmap-mit-Meilensteinen.html)
 
+- [Implementierung-Logik-Tic-Tac-Toe](Implementierung-Logik-Tic-Tac-Toe.html)
+
 - [KI Prompts](KI_Prompts.html)
 
+- [Kanban-Board-Tic-Tac-Toe](Kanban-Board-Tic-Tac-Toe.html)
+
 - [Kanban-Board-To-Do-Listen](Kanban-Board-To-Do-Listen.html)
+
+- [Konzepte-Python-Programmierung](Konzepte-Python-Programmierung.html)
 
 - [Python-Pakete](Python-Pakete.html)
 
 - [Python-Umgebung](Python-Umgebung.html)
-
-- [README](README.html)
 
 - [Spieleentwicklung-mit-Python](Spieleentwicklung-mit-Python.html)
 
